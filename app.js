@@ -14,7 +14,7 @@ app.use("/admin", adminRoutes);
 app.use(contactRoutes);
 app.use(successRoutes);
 app.use((req, res, next) => {
-  res.sendFile(path.join(__dirname, "views", "success.html"));
+  res.sendFile(path.join(__dirname, "views", "page-not-found.html"));
 });
 
 app.listen(4000);
